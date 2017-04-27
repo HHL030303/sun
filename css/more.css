@@ -1,0 +1,25 @@
+header{
+	width: 10rem;
+	height: 1.16rem;
+	background-color: #ff6600;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	
+}
+header p{
+	padding-left: 4.8%;
+	text-align: left;
+	font-size: 0.373333rem;
+	line-height: 1.16rem;
+	color: white;
+}
+
+.main{
+	position: absolute;
+	top: 1.16rem;
+	width: 10rem;
+}
+.tg-list-item{
+	margin-top: 0.22rem;
+}

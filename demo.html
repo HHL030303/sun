@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<a  class="add">点击添加p标签</a>
+		<p class="pa">
+			<span>1</span>
+			<b href="" class="addNUm">+</b>
+		</p>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$(function(){
+//			})
+		
+		
+		
+			
+			$('.add').on('click',function(){
+				var num=0;
+							$('.pa').append('<span>1</span><b  class="addNUm">+</b>')
+//							$('.addNUm').trigger('click')
+							$('.addNUm').on("click",function(){
+								var $span =$(this).prev();
+								var  value =$span.html();
+								value++;
+								$span.html(value)
+                   
+				});			
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,249 @@
+﻿@charset "utf-8";
+
+/**
+  手机端H5页面样式，尺寸可适配
+  html{font-size:75px;} ----不可删除
+**/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-family: Microsoft YaHei, tahoma, arial, sans-serif;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+ul {
+	list-style: none
+}
+
+button,
+input,
+select,
+textarea {
+	margin: 0
+}
+
+img,
+embed,
+object,
+audio,
+video {
+	height: auto;
+	max-width: 100%;
+	border: none;
+}
+
+iframe {
+	border: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+td,
+th {
+	padding: 0;
+	text-align: left
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+
+/*去除IOS系统按钮默认样式*/
+
+*,
+body {
+	border: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: Microsoft YaHei, tahoma, arial, sans-serif;
+	font-weight: normal;
+	font: inherit;
+	font-family: "微软雅黑";
+	-webkit-font-smoothing: antialiased;
+	/*消除字体锯齿，清晰字体*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	/* Firefox */
+	-webkit-box-sizing: border-box;
+	/* Safari */
+}
+
+html {
+	font-family: "微软雅黑";
+	overflow-y: auto;
+	font-size: 75px;
+	height: 100%;
+	background-color: #ebebeb!important;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.bc {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+	width: 10.0rem;
+	height: 100%;
+	max-width:14.4rem;
+	margin: 0 auto!important;
+}
+.left{
+	float: left;
+
+}
+.right{
+	float:right;
+}
+
+
+/*index.html*/
+
+.main .dingdan{
+	height: 1.186667rem;
+	line-height: 1.186667rem;
+	background: white;
+	margin-top: 0.133333rem;
+	
+}
+.main .dingdan span{
+	font-size:0.4rem;
+	color: #333333;
+}
+/*.main .dingdan .iconfont{
+	font-size: 30px;
+}*/
+.main .dingdan span:nth-child(1){
+	margin-left: 0.973333rem;
+}
+.main .dingdan span:nth-child(2){
+	margin-left:0.6rem
+}
+.main .dingdan span:nth-child(3){
+	margin-right: 1.2rem
+}
+
+
+.main_fenlei{
+	width: 100%;
+	height: 0.96rem;
+	background: white
+}
+
+.main_fenlei p span{
+	margin-left: 0.653333rem;
+	line-height: 0.96rem
+}
+.main_fenlei p:last-of-type{
+	width: 100%;
+	
+}
+.main_fenlei div{
+	width: 0;
+	height: 0.4rem;
+	border-right: 2px solid #919191;
+	
+
+}
+.main_fenlei p em{
+	width: 0.32rem;
+	height: 0.186667rem;
+	margin-top:0.406667rem;
+	margin-left: 0.213333rem;
+	background-image: url(../images/Arr_down.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+.main_goods{
+	border-top:2px solid #919191;
+	margin-bottom: 6px
+
+}
+.mui-segmented-control .mui-control-item.mui-active p{
+	color: red
+}
+.goods_left{
+	width: 36.8%;
+	height: 2.266667rem
+}
+.goods_left img{
+	margin-top: 0.066667rem;
+	max-width: 100%;
+	height: 100%;
+}
+.goods_right{
+	width: 60%;
+}
+.goods_right p:nth-child(1){
+	margin-top: 0.08rem;
+}
+.goods_right p:nth-child(1) .mallName{
+	font-size: 0.426667rem;
+	color: #0e0e0e;
+
+}
+.goods_right p:nth-child(1) .mallPos{
+	color: #919191;
+	font-size: 0.333333rem;
+}
+.goods_right p:nth-child(2){
+	color: #494444;
+	font-size: 0.306667rem
+}
+.goods_right p:nth-child(3) .peis{
+	color: #555555;
+	font-size: 0.306667rem;
+	padding-right: 0.16rem;
+	border-right: 2px solid #919191;
+}
+.goods_right p:nth-child(3) .sale{
+	font-size: 0.306667rem;
+	color: #505050;
+	margin-left: 0.186667rem;
+}
+
+.mui-control-item{
+	width: 33%!important;
+}
+.mui-control-item:nth-child(3){
+	width: 32%!important;
+}
+

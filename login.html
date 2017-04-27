@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<span class="mui-icon mui-icon-back mui-action-back left"></span>
+			<p class="left">登录</p>
+		</header>
+		<section>
+			<div class="login_logo">
+					<p class="logo_p"></p>
+					<h4>一个电话送到你的面前</h4>
+				</div>
+			<div class="login_info">
+				<p class="username">
+					<label for="">账号:</label>
+					<input type="text" placeholder="手机号/用户名" />
+				</p>
+				<p class="password">
+					<label for="">密码:</label>
+					<input type="text" placeholder="登录密码" />
+				</p>
+				<p class="login_btn" style="border:none;padding-right: 0.4rem;">
+					<input type="button" name="" id="login_btn" value="登录" />
+				</p>
+				<p class="forget_ntn">
+					<a >
+						没有账号？
+					</a>
+					<a data-href="regeister.html">
+						手机注册
+					</a>
+				</p>
+			</div>
+			<div class="third_login">
+				<p class="third_btn">
+					<span class="left">
+					</span>
+					<span class="left">
+						快捷登陆
+					</span>
+					<span class="left">
+						
+					</span>
+				</p>
+				<p class="third_app">
+					<span class="mui-icon mui-icon-qq">
+						
+					</span>
+					<span class="mui-icon mui-icon-weixin">
+						
+					</span>
+				</p>
+			</div>
+			<div class="hidebox">
+				<dl>
+					<dt>
+						
+					</dt>
+					<dd>
+						请输入账户
+					</dd>
+				</dl>
+			</div>
+		</section>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			$("a").on("click",function(e){
+				var datahref =$(this).attr("data-href");
+				if(datahref){
+					mui.openWindow({
+						url:datahref
+					})
+				}
+				
+			})
+		</script>
+	
+	</body>
+</html>

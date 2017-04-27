@@ -1,0 +1,43 @@
+#top_logo{
+	width: 10rem;
+	height: 5.6rem;
+}
+#top_logo .header{
+	height: 2.786667rem;
+	background: #ff6600;
+}
+#top_logo .section{
+	height: 2.813333rem;
+	background:white;
+}
+.login_btn{
+	position: absolute;
+	top:1.493333rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2.8rem;
+	height:2.8rem;
+	border:8px solid #ff6600;
+	border-radius: 100%;
+	background: white;
+	text-align: center;
+	vertical-align: middle;
+}
+.login_btn p{
+	text-align: center;
+	line-height: 2.6rem;
+	font-size: 0.613333rem
+}
+.login_btn p a{
+	color: #ff6600;
+}
+.login_btn  img{
+	width: 100%;
+	border-radius: 100%;
+	height: 100%;
+}
+.main{
+	width: 10rem;
+	
+
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopCar.css"/>
+		<script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--<div class="radio">
+			<div class="inner"></div>
+		</div>-->
+		<header>
+			<span class="mui-icon mui-icon-back mui-action-back left"></span>
+			<p class="left">购物车</p>
+			<!--<span class="mui-icon-extra mui-icon-extra-heart right"></span>-->
+		</header>
+		
+		<div class="mui-content">
+			<div class="shopCAR">
+				<div class="shopInfo">
+					商家信息
+				</div>
+				<div class="wrap">
+					
+				</div>
+				<!--<div class="shop_header">
+					<p class="left">商品名称</p>
+					<p class="left">
+						<span>X</span>
+						<em>1</em>
+					</p>
+					<p class="right">
+						<span>￥</span>
+						<em>11.00</em>
+					</p>
+				</div>-->
+				<!--<div class="shop_header">
+					<p class="left">商品名称</p>
+					<p class="left">
+						<span>X</span>
+						<em>1</em>
+					</p>
+					<p class="right">
+						<span>￥</span>
+						<em>11.00</em>
+					</p>
+				</div>
+				<div class="shop_header">
+					<p class="left">商品名称</p>
+					<p class="left">
+						<span>X</span>
+						<em>1</em>
+					</p>
+					<p class="right">
+						<span>￥</span>
+						<em>11.00</em>
+					</p>
+				</div>
+				<div class="shop_header">
+					<p class="left">商品名称</p>
+					<p class="left">
+						<span>X</span>
+						<em>1</em>
+					</p>
+					<p class="right">
+						<span>￥</span>
+						<em>11.00</em>
+					</p>
+				</div>
+				<div class="shop_header">
+					<p class="left">商品名称</p>
+					<p class="left">
+						<span>X</span>
+						<em>1</em>
+					</p>
+					<p class="right">
+						<span>￥</span>
+						<em>11.00</em>
+					</p>
+				</div>-->
+			</div>
+				<div class="main_dingdan">
+					<!--<div class="main_blank"></div>
+						<div class="dingdanInfo">
+							订单信息
+						</div>
+						<div class="dingdanInfo">
+							订单号：2011509140632351
+						</div>	
+						<div class="dingdanInfo">
+							下单时间：2015年9月14  13:53
+						</div>	
+						<div class="dingdanInfo">
+							联系人：王先生
+						</div>	
+						<div class="dingdanInfo">
+							联系电话：1352843984
+						</div>	
+						<div class="dingdanInfo">
+							收货地址：某某小区A座8层
+						</div>	-->
+						
+				</div>
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+
+			if(window.plus){
+				plusReady();
+					}
+			else{
+				document.addEventListener("plusready",plusReady,false);
+				}
+			function plusReady(){
+			var self = plus.webview.currentWebview();
+//			var shopName =self.name;
+//			var shopPrice =self.value;
+			var shopTime =self.time;
+			var shoparr1 =self.arr1;
+			var shoparr2 =self.arr2;
+			var shoparr3=self.arr3;
+			for(var i=0;i<shoparr3.length;i++){
+				if(localStorage.getItem('goodsitem_'+shoparr3[i])){
+					var dataid =localStorage.getItem('goodsitem_'+shoparr3[i]);
+//					alert(shoparr3[i])
+					var html =$('<div class="shop_header"><p class="left">'+shoparr1[shoparr3[i]]+'</p><p class="left"><span>×</span><em>'+dataid+'</em></p><p class="right"><span>￥</span><em>'+shoparr2[shoparr3[i]]+'</em></p></div>');
+					}
+		
+				$('.wrap').append(html);
+//					shopTime[1]+'月'+shopTime[2]+'日'+ shopTime[3]+'时'                                                                                                                          shopTime
+				};
+					var userInfo =$('<div class="main_blank"></div><div class="dingdanInfo">订单信息</div><div class="dingdanInfo">订单号：2011509140632351</div><div class="dingdanInfo">'+'下单时间:'+shopTime[0]+'年'+shopTime[1]+'月'+shopTime[2]+'日'+shopTime[3]+'时'+shopTime[4]+'分'+'</div><div class="dingdanInfo">联系人：王先生</div><div class="dingdanInfo">联系电话：1352843984</div><div class="dingdanInfo">收货地址：某某小区A座8层</div><div class="gotoPay"><p class="right"><a href="" >去支付</a></p></div>')
+					$('.main_dingdan').append(userInfo)
+			};
+			mui.plusReady(function(){
+				plus.key.addEventListener("backbutton",function(){
+						for(var i=0;i<50;i++){
+						localStorage.removeItem("goodsitem_"+i);
+						shoparr3=null;
+					};
+				})
+			})
+		</script>
+	</body>
+</html>
+
+							
+								
+							
+						

@@ -1,0 +1,81 @@
+header{
+	width: 10rem;
+	height: 1.16rem;
+	background-color: #ff6600;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	
+}
+header span:nth-child(1){
+	font-size: 0.58rem;
+	color: white;
+	line-height: 1.16rem;
+	margin-left: 0.4rem
+}
+header p{
+	padding-left: 4.8%;
+	text-align: left;
+	font-size: 0.373333rem;
+	line-height: 1.16rem;
+	color: white;
+}
+.mui-content{
+	width: 10rem;
+	position: absolute;
+	top: 1.17rem;
+	height: 10rem;
+}
+.shopInfo,.dingdanInfo{
+	height: 0.84rem;
+	line-height: .84rem;
+	font-size: 0.373333rem;
+	text-indent: 2em;
+}
+.shop_header{
+	height: 0.84rem;
+	border-top:2px solid #919191;
+	line-height: .84rem;
+	font-size: 0.373333rem
+}
+.shop_header p:nth-child(1){
+	margin-left:0.746667rem ;
+	color: #0e0e0e;
+	width: 3rem;
+	
+}
+.shop_header p:nth-child(2){
+	margin-left: 1.6rem;
+	color: #919191;
+	
+}
+.shop_header p:nth-child(3){
+	
+	color: #ff6600;
+	margin-right:0.733333rem ;
+}
+
+
+.main_blank{
+	background-color: #e8e8e8;
+	height:0.253333rem ;
+}
+.gotoPay p{
+	width:3.066667rem;
+	height: 0.733333rem;
+	background: #ff6600;
+	text-align: center;
+	line-height: .733333rem;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-right:0.746667rem ;
+	margin-top: 0.4rem
+}
+.gotoPay a{
+	color: white;
+	font-size: 0.373333rem;
+	
+}
+.main_dingdan{
+	padding-bottom: 3rem;
+}

@@ -1,0 +1,14 @@
+.mui-bar{
+	height:1.72rem ;
+}
+.mui-bar-tab .mui-tab-item .mui-icon {
+	top: 0.186667rem;
+	font-size: 0.853333rem;
+
+}
+.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label {
+	font-size: 0.373333rem;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis
+}

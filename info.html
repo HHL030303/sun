@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/info.css"/>
+		<!--<link rel="stylesheet" href="css/iconfont.css">-->
+		<script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<span class="mui-icon mui-icon-back mui-action-back left"></span>
+			<p class="left">商家信息</p>
+			<span class="mui-icon-extra mui-icon-extra-heart right"></span>
+		</header>
+		
+		<div class="mui-content">
+			<div class="main_fenlei mui-segmented-control clearfix" id="segmentedControl">
+					<a class="mui-control-item mui-active" href="#item1" style="position: relative;">
+						<p class="left">
+							商品
+						</p>
+					</a>
+					<!--<div class="eft"></div>-->
+				<a class="mui-control-item" href="#item2">
+					<p class="left">评价</p>
+				</a>
+					<!--<div class="eft"></div>-->
+				<a class="mui-control-item" href="#item3">	
+					<p class="left">商家</p>
+				</a>
+			</div>
+			<div id="item1" class="mui-control-content mui-active" >
+					<div class="hide_bottom">
+							<div class="clear_goods">
+								<p >
+									<span class="mui-icon mui-icon-trash delete"></span>
+									 <span class="delete">清空购物车</span>
+								</p>
+								
+							</div>
+							
+							<div class="addcar_goods_btn clearfix" >
+								<p class="addcar_amount left">
+									<span class="mui-icon-extra mui-icon-extra-cart"></span>
+									<span>合计：</span><em>0.00</em>
+								</p>
+								<p class="addcar_check right">
+									<a data-href="shopCar.html" >去结算</a>
+								</p>
+							</div>
+					</div>
+				<div class="container_wrap">
+					<div class="container"></div>
+					<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view mui-table-view-chevron">
+							</ul>
+						</div>
+					</div>
+				</div>	
+				</div>
+			
+			<div id="item2" class="mui-control-content">
+					<div class="goods_comment">
+						<div class="goods_bar clearfix">
+							<a href="javascript:void(0)" class="left comment_active">全部</a>
+							<a href="javascript:void(0)" class="left">好评</a>
+							<a href="javascript:void(0)" class="left">中评</a>
+							<a href="javascript:void(0)" class="left">差评</a>
+
+						</div>
+						<div class="goods_wrap">
+								<div class="all comment" style="">
+											<div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div>
+												<div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div>
+												<div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div>
+									</div>
+								<div class="well comment" style="">
+												<div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div><div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div>
+								</div>
+								<div class="justsoso comment" style="">
+										<div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div><div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div>
+								</div>
+								<div class="bad comment" style="">
+									<div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div><div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div><div class="comment_list">
+													<p class="clearfix">
+														<span class="left">135****4878</span>
+														<span class="right">2014-2-26</span>
+													</p>
+													<p>味道不错，服务很好，下次还会光临</p>
+													<p>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+														<span class="iconfont icon-shoucang1 left"></span>
+													</p>
+												</div>
+								</div>
+						</div>
+						
+					</div>
+			</div>
+		<div id="item3" class="mui-control-content">
+			<div class="shop_wrap clearfix">
+					<div class="shop_left left">
+						<img src="images/shop.jpg" alt="">
+					</div>
+					<div class="shop_right right">
+							<p>必胜客欢乐厅</p>
+							<p>起送价：<span>30.00</span></p>
+							<p>配送费:<span>0.0</span></p>
+							<p>
+								<span class="iconfont icon-shoucang1 left"></span>
+								<span class="iconfont icon-shoucang1 left"></span>
+								<span class="iconfont icon-shoucang1 left"></span>
+								<span class="iconfont icon-shoucang1 left"></span>
+							</p>
+					</div>
+			</div>
+			<div class="shop_list">
+				<p>商家地址：某某商场2楼A区32号</p>
+				<p>配送信息：由某某管理配送</p>
+				<p>支付信息：该商家支持在线支付</p>
+				<p style="border-bottom: none" class="shop_btn">
+					<a href="">不了解商品？试试和商家视频通话</a>
+				</p>
+			</div>	
+			</div>
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/info.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var header_height =$('header').height();
+			var nav_height =$('#segmentedControl').height();
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					},
+				}
+			});
+//		
+		
+		
+		
+		</script>
+	</body>
+</html>

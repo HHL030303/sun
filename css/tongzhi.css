@@ -1,0 +1,484 @@
+@import url(../fonts/iconfont.css);
+@import url(mui.min.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; }
+
+img {
+  border: none; }
+
+body,
+a,
+input,
+button {
+  font-family: "Microsoft Yahei", "Droid Sans Fallback", "Arial", "Helvetica", "sans-serif", "Microsoft yahei";
+  font-size: 14px;
+  outline: none;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+table {
+  text-align: center;
+  vertical-align: middle; }
+
+th {
+  text-align: center;
+  vertical-align: middle; }
+
+/*common*/
+.bz-bb {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.bz-cb {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; }
+
+.bc-w {
+  background: #fff; }
+
+.bc-w-i {
+  background: #fff !important; }
+
+.fw-in {
+  font-weight: inherit !important; }
+
+.fw-b {
+  font-weight: bold; }
+
+.cs-p {
+  cursor: pointer !important; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.w1000 {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.w1024 {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.w900 {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (max-width: 1442px) {
+  html {
+    font-size: 200px; } }
+@media (max-width: 1282px) {
+  html {
+    font-size: 177.77778px; } }
+@media (max-width: 1026px) {
+  html {
+    font-size: 142.22222px; } }
+@media (max-width: 962px) {
+  html {
+    font-size: 133.33333px; } }
+@media (max-width: 952px) {
+  html {
+    font-size: 131.94444px; } }
+@media (max-width: 902px) {
+  html {
+    font-size: 125px; } }
+@media (max-width: 802px) {
+  html {
+    font-size: 111.11111px; } }
+@media (max-width: 775px) {
+  html {
+    font-size: 107.36111px; } }
+@media (max-width: 770px) {
+  html {
+    font-size: 106.66667px; } }
+@media (max-width: 738px) {
+  html {
+    font-size: 102.22222px; } }
+@media (max-width: 734px) {
+  html {
+    font-size: 101.66667px; } }
+@media (max-width: 733px) {
+  html {
+    font-size: 101.52778px; } }
+@media (max-width: 669px) {
+  html {
+    font-size: 92.63889px; } }
+@media (max-width: 642px) {
+  html {
+    font-size: 88.88889px; } }
+@media (max-width: 602px) {
+  html {
+    font-size: 83.33333px; } }
+@media (max-width: 570px) {
+  html {
+    font-size: 78.88889px; } }
+@media (max-width: 535px) {
+  html {
+    font-size: 74.02778px; } }
+@media (max-width: 437px) {
+  html {
+    font-size: 60.41667px; } }
+@media (max-width: 416px) {
+  html {
+    font-size: 57.5px; } }
+@media (max-width: 413px) {
+  html {
+    font-size: 57.08333px; } }
+@media (max-width: 386px) {
+  html {
+    font-size: 53.33333px; } }
+@media (max-width: 377px) {
+  html {
+    font-size: 52.08333px; } }
+@media (max-width: 362px) {
+  html {
+    font-size: 50px; } }
+@media (max-width: 322px) {
+  html {
+    font-size: 44.44444px; } }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; }
+
+img {
+  border: none; }
+
+body,
+a,
+input,
+button {
+  font-family: "Microsoft Yahei", "Droid Sans Fallback", "Arial", "Helvetica", "sans-serif", "Microsoft yahei";
+  font-size: 14px;
+  outline: none;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+table {
+  text-align: center;
+  vertical-align: middle; }
+
+th {
+  text-align: center;
+  vertical-align: middle; }
+
+/*common*/
+.bz-bb {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.bz-cb {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; }
+
+.bc-w {
+  background: #fff; }
+
+.bc-w-i {
+  background: #fff !important; }
+
+.fw-in {
+  font-weight: inherit !important; }
+
+.fw-b {
+  font-weight: bold; }
+
+.cs-p {
+  cursor: pointer !important; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.w1000 {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.w1024 {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.w900 {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (max-width: 1442px) {
+  html {
+    font-size: 200px; } }
+@media (max-width: 1282px) {
+  html {
+    font-size: 177.77778px; } }
+@media (max-width: 1026px) {
+  html {
+    font-size: 142.22222px; } }
+@media (max-width: 962px) {
+  html {
+    font-size: 133.33333px; } }
+@media (max-width: 952px) {
+  html {
+    font-size: 131.94444px; } }
+@media (max-width: 902px) {
+  html {
+    font-size: 125px; } }
+@media (max-width: 802px) {
+  html {
+    font-size: 111.11111px; } }
+@media (max-width: 775px) {
+  html {
+    font-size: 107.36111px; } }
+@media (max-width: 770px) {
+  html {
+    font-size: 106.66667px; } }
+@media (max-width: 738px) {
+  html {
+    font-size: 102.22222px; } }
+@media (max-width: 734px) {
+  html {
+    font-size: 101.66667px; } }
+@media (max-width: 733px) {
+  html {
+    font-size: 101.52778px; } }
+@media (max-width: 669px) {
+  html {
+    font-size: 92.63889px; } }
+@media (max-width: 642px) {
+  html {
+    font-size: 88.88889px; } }
+@media (max-width: 602px) {
+  html {
+    font-size: 83.33333px; } }
+@media (max-width: 570px) {
+  html {
+    font-size: 78.88889px; } }
+@media (max-width: 535px) {
+  html {
+    font-size: 74.02778px; } }
+@media (max-width: 437px) {
+  html {
+    font-size: 60.41667px; } }
+@media (max-width: 416px) {
+  html {
+    font-size: 57.5px; } }
+@media (max-width: 413px) {
+  html {
+    font-size: 57.08333px; } }
+@media (max-width: 386px) {
+  html {
+    font-size: 53.33333px; } }
+@media (max-width: 377px) {
+  html {
+    font-size: 52.08333px; } }
+@media (max-width: 362px) {
+  html {
+    font-size: 50px; } }
+@media (max-width: 322px) {
+  html {
+    font-size: 44.44444px; } }
+body, html {
+  width: 100%;
+  height: 100%; }
+
+header {
+  width: 100%;
+  padding-left: 0.24rem;
+  padding-right: .24rem;
+  height: .98rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: flex;
+  background: #ff4747;
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
+  header i {
+    color: white;
+    line-height: .98rem;
+    font-size: .36rem; }
+  header .topLogo {
+    line-height: .98rem;
+    font-size: .36rem;
+    color: white; }
+  header .remind {
+    font-size: 0.4rem; }
+
+.mui_define {
+  height: 0.9rem; }
+
+section {
+  position: absolute;
+  width: 100%; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background: #ebebeb; }
+
+section {
+  width: 100%;
+  height: 100%; }
+  section .mui-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: .98rem;
+    background: #ebebeb; }
+    section .mui-content ._blank {
+      width: 100%;
+      height: .2rem;
+      background: #ebebeb; }
+    section .mui-content .mui-page-content {
+      height: 10rem;
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: .24rem;
+      padding-right: .24rem; }
+      section .mui-content .mui-page-content .mui-table-view .mui-table-view-cell {
+        font-size: .24rem;
+        border: none;
+        color: #000000;
+        padding: 0.24rem 0.24rem; }
+        section .mui-content .mui-page-content .mui-table-view .mui-table-view-cell a {
+          font-size: .24rem;
+          color: #000000; }
+        section .mui-content .mui-page-content .mui-table-view .mui-table-view-cell span {
+          font-size: .22rem;
+          color: #b8b8b8; }
+      section .mui-content .mui-page-content .mui-content-padded {
+        width: 100%;
+        height: .66rem;
+        background: #ebebeb; }
+        section .mui-content .mui-page-content .mui-content-padded p {
+          font-size: .24rem;
+          color: #a5a5a5;
+          line-height: .66rem;
+          padding-left: .24rem; }
+
+/*# sourceMappingURL=tongzhi.css.map */

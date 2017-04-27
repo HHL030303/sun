@@ -1,0 +1,141 @@
+header{
+	width: 10rem;
+	height: 1.16rem;
+	background-color: #ff6600;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+section{
+	height: 100%;
+}
+header span:nth-child(1){
+	font-size: 0.58rem;
+	color: white;
+	line-height: 1.16rem;
+	margin-left: 0.4rem
+}
+header p{
+	padding-left: 4.8%;
+	text-align: left;
+	font-size: 0.373333rem;
+	line-height: 1.16rem;
+	color: white;
+}
+header span:nth-child(3){
+	font-size: 0.58rem;
+	color: white;
+	line-height: 1.16rem;
+	margin-right: 0.8rem
+}
+section{
+	width: 10rem;
+	position: absolute;
+	top:1.16rem;	
+	background: white
+}
+section .blank{
+	height: 0.253333rem;
+	background-color: #e8e8e8;
+}
+section .username,.password,.confirm_pass{
+	border-bottom: 1px solid #919191;
+}
+section .username label,section .password label,section .confirm_pass label{
+	font-size:0.373333rem ;
+	color: #333333;
+	width: 2.266667rem;
+	height: 1.106667rem;
+	line-height: 1.106667rem;
+	text-align: center;
+	display: inline-block;
+}
+section .username input,section .password input,section .confirm_pass input{
+	height: 0.773333rem;
+	margin: 0 auto;
+	background-color: #e8e8e8;
+	width:7.066667rem;
+}
+section .confirm_xieyi{
+	margin-top: 0.533333rem;
+}
+section .confirm_xieyi p{
+	text-align: center;
+	color: #919191;
+	font-size: 0.306667rem
+}
+section .confirm_xieyi p .check{
+	float: left;
+	width: 0.4rem;
+	height: .4rem;
+	border-radius: 100%;
+	-webkit-border-radius:100%;
+	margin-left: 2.24rem;
+	background-color:#ccc;
+	
+}
+section .confirm_xieyi p .bechecked{
+	background-image: url(../images/f_dg.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.466667rem 0.466667rem;
+	
+}
+section .confirm_xieyi p span:nth-child(2){
+	margin-left:.24rem;
+}
+section .confirm_xieyi p em{
+	color: #ff6600;
+}
+section .login_btn{
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	height: 1.0rem;
+	
+}
+section .login_btn .select{
+	color: white;
+	background-color: #ff6600;
+	line-height: 1rem;
+	width: 100%;
+	margin-top: 0.56rem;
+	font-size: 0.5rem;
+	text-align: center;
+}
+section .login_btn input.btn_blank{
+	background-color: #ccc;
+	cursor: default;
+	font-size: 0.5rem;
+	text-align: center;
+}
+.hidebox{
+	position:absolute;
+	top: 50%;left: 50%;
+	margin-left: -20%;
+	transform: translateY(-50%);
+	width:4.666667rem;
+	background-color: rgba(0,0,0,.3);
+	display: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.hidebox dt{
+	width: 100%;
+	height: 1.333333rem;
+	background-image: url(../images/xiao.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.hidebox dt.success{
+	background-image: url(../images/xl.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1.066667rem 1.066667rem
+}
+.hidebox dd{
+	font-size: 0.4rem;
+	color: #fff;
+	text-align: center;
+	line-height: .8rem;
+	
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			Array.prototype.only = function(){
+							 var res = [];
+							 var json = {};
+							 for(var i = 0; i < this.length; i++){
+							  if(!json[this[i]]){
+							   res.push(this[i]);
+							   json[this[i]] = 1;
+							  }
+							 }
+							 return res;
+					};
+				var arr3=[4,2,2,1,2,3,33,22,1,2,3];
+				arr3=arr3.only();
+				console.log(arr3)
+		</script>
+	</body>
+</html>

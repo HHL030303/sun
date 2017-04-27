@@ -1,0 +1,164 @@
+header{
+	width: 10rem;
+	height: 1.16rem;
+	background-color: #ff6600;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	
+}
+header span:nth-child(1){
+	font-size: 0.58rem;
+	color: white;
+	line-height: 1.16rem;
+	margin-left: 0.4rem
+}
+header p{
+	padding-left: 4.8%;
+	text-align: left;
+	font-size: 0.373333rem;
+	line-height: 1.16rem;
+	color: white;
+}
+header span:nth-child(3){
+	font-size: 0.58rem;
+	color: white;
+	line-height: 1.16rem;
+	margin-right: 0.8rem
+}
+section{
+	width: 10rem;
+	position: absolute;
+	top:1.16rem;	
+	background: white
+}
+section .login_logo{
+	border-bottom: 2px solid #919191;
+}
+section .logo_p{
+	width: 100%;
+	background-image: url(../images/logo.jpg);
+	background-size: 3.733333rem 1.893333rem;
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 1.893333rem;
+	margin-top: 1.333333rem
+
+}
+.login_logo h4{
+	text-align: center;
+	font-size: 0.426667rem;
+	color: #ccc;
+	margin-top: 0.4rem;
+	line-height: 0.933333rem;
+	margin-bottom: 0.8rem;
+
+}
+.login_info .username,.password,.login_btn{
+	width: 100%;
+	padding-left: 0.4rem;
+	display: flex;
+	padding-top: 0.533333rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 2px solid #919191;
+}
+.login_info label{
+	font-size: 0.373333rem;
+	color: #333333;
+	
+}
+.login_info input{
+	padding-left: 0.4rem;
+	font-size: 0.373333rem;
+	color: #919191;
+	width: 70%
+}
+.login_btn input{
+	background-color: #ff6600;
+	color: white;
+	height: 1.0rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.373333rem;
+	width: 100%;
+	padding-left: 0;
+}
+.forget_ntn{
+	font-size: 0.373333rem;
+	margin-top: 0.8rem;
+}
+.forget_ntn a:nth-child(1){
+	margin-left: 2.973333rem;
+	color: #333333;
+}
+.forget_ntn a:nth-child(2){
+	color: #ff6600;
+	text-decoration: underline;
+
+}
+.third_login{
+	margin-top: 0.8rem;
+	width:10rem;
+}
+.third_login .third_btn{
+	height: 0.533333rem
+}
+
+.third_login .third_btn span:nth-child(1),.third_login .third_btn span:nth-child(3){
+	width: 36%;
+	height: 0px;
+	border-bottom: 1px solid #919191;
+	display: block;
+	margin-top: 0.266667rem
+
+
+}
+.third_login .third_btn span:nth-child(2){
+	text-align: center;
+	width: 28%;
+	color: #333333;
+	font-size: 0.373333rem;
+
+}
+.third_app{
+	margin-top: 1.066667rem
+}
+.third_app span{
+	width: 50%;
+	font-size: 1.466667rem;
+	float: left;
+	text-align: center;
+	color: red
+}
+
+.hidebox{
+	position:absolute;
+	top: 50%;left: 50%;
+	margin-left: -22%;
+	transform: translateY(-50%);
+	width:4.666667rem;
+	background-color: rgba(0,0,0,.3);
+	display: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.hidebox dt{
+	width: 100%;
+	height: 1.333333rem;
+	background-image: url(../images/xiao.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.hidebox dt.success{
+	background-image: url(../images/xl.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1.066667rem 1.066667rem
+}
+.hidebox dd{
+	font-size: 0.4rem;
+	color: #fff;
+	text-align: center;
+	line-height: .8rem;
+	
+}

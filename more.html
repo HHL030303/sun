@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<!--<link rel="stylesheet" href="css/iconfont.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/more.css"/>
+		<link rel="stylesheet" href="css/iconfont.css">
+		<script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+	   	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	   	<style type="text/css">
+	   		/*.radio{
+	   			width: 50px;
+	   			height: 30px;
+	   			background-color: #4cd964;
+	   			border-color: #4cd964;
+	   			border-radius: 25px;
+	   			position: relative;
+	   		}
+	   	.radio .inner{
+	   		position: absolute;
+	   		left: -1px;
+	   		top:0px;
+	   		width: 28px;
+	   		height: 28px;
+	   		background: white;
+	   		z-index: 1;
+	   		border-radius: 100%;
+	   	}	
+	   	.rig{
+	   			position: absolute;
+	   		right: -1px;
+	   		top:0px;
+	   		width: 28px;
+	   		height: 28px;
+	   		background: white;
+	   		z-index: 1;
+	   		border-radius: 100%;
+	   	}*/
+	   	
+	   		.tgl{display:none}
+			.tgl,.tgl *,.tgl :after,.tgl :before,.tgl+.tgl-btn,.tgl:after,.tgl:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+			.tgl ::-moz-selection,.tgl :after::-moz-selection,.tgl :before::-moz-selection,.tgl+.tgl-btn::-moz-selection,.tgl::-moz-selection,.tgl:after::-moz-selection,.tgl:before::-moz-selection{background:0 0}
+			.tgl ::selection,.tgl :after::selection,.tgl :before::selection,.tgl+.tgl-btn::selection,.tgl::selection,.tgl:after::selection,.tgl:before::selection{background:0 0}
+			.tgl+.tgl-btn{outline:0;display:block;width:4em;height:2em;position:relative;cursor:pointer}
+			.tgl+.tgl-btn:after,.tgl+.tgl-btn:before{position:relative;display:block;content:"";width:50%;height:100%}
+			.tgl+.tgl-btn:after{left:0}
+			.tgl+.tgl-btn:before{display:none}
+			.tgl:checked+.tgl-btn:after{left:50%}
+			.tgl-light+.tgl-btn{background:#f0f0f0;border-radius:2em;padding:2px;-webkit-transition:all .4s ease;transition:all .4s ease}
+			.tgl-light+.tgl-btn:after{border-radius:50%;background:#fff;-webkit-transition:all .2s ease;transition:all .2s ease}
+			.tgl-light:checked+.tgl-btn{background:#27d534};
+	   	</style>
+	</head>
+	<body>
+		<!--<div class="radio">
+			<div class="inner"></div>
+		</div>-->
+		<header>
+			<p>更多</p>
+		</header>
+		<div class="main">
+				<div class="dingdan clearfix">
+						<span class="mui-icon mui-icon-location left"></span>	
+						<span class="left">自动定位</span>	
+						 <span class='tg-list-item right'>
+								    <input class='tgl tgl-light' id='cb1' type='checkbox'>
+								    <label class='tgl-btn' for='cb1'></label>
+						</span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="iconfont icon-shoucang1 left"></span>	
+						<span class="left">非WIFI模式</span>	
+						 <span class='tg-list-item right'>
+								    <input class='tgl tgl-light' id='cb1' type='checkbox'>
+								    <label class='tgl-btn' for='cb1'></label>
+						</span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="mui-icon mui-icon-contact left"></span>	
+						<span class="left">关于我们</span>	
+						<span class="mui-icon mui-icon-arrowright right"></span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="mui-icon mui-icon-phone left"></span>	
+						<span class="left">客服热线</span>	
+						<span class="mui-icon mui-icon-forward right"></span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="iconfont icon-shouhuodizhi2 left"></span>	
+						<span class="left">意见反馈</span>	
+						<span class="mui-icon mui-icon-arrowright right"></span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="mui-icon mui-icon-chatboxes left"></span>	
+						<span class="left">消息中心</span>	
+						<span class="mui-icon mui-icon-arrowright right"></span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="mui-icon mui-icon-reload left"></span>	
+						<span class="left">检查更新</span>	
+						<span class="mui-icon mui-icon-arrowright right"></span>	
+				</div>
+				<div class="dingdan clearfix">
+						<span class="iconfont icon-shouhuodizhi2 left"></span>	
+						<span class="left">技术支持</span>	
+						<span class="mui-icon mui-icon-arrowright right"></span>	
+				</div>
+			</div>
+		
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		var inner =document.getElementsByClassName('inner')[0];
+		var flag;
+		inner.addEventListener('click',function(){
+			if($(this).hasClass("inner")){
+				$(this).addClass('rig').removeClass("inner");
+			}else{
+				$(this).addClass('inner').removeClass("rig");
+			}
+			
+		},false);
+		
+		</script>-->
+	</body>
+</html>
